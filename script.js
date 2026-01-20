@@ -5,7 +5,7 @@ const CONFIG = {
   // API Keyを設定してください（本番環境では環境変数から取得推奨）
   API_KEY: "sk-freee-accounting-abc123",
   MAX_FILE_SIZE: 10 * 1024 * 1024, // 10MB
-  MAX_FILES: 20, // 最大ファイル数
+  MAX_FILES: 50, // 最大ファイル数
 };
 
 // DOM Elements
