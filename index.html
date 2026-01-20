@@ -60,7 +60,13 @@
             </div>
 
             <div class="upload-area" id="upload-area">
-              <input type="file" id="file-input" accept="image/*" hidden />
+              <input
+                type="file"
+                id="file-input"
+                accept="image/*"
+                multiple
+                hidden
+              />
               <div class="upload-icon">
                 <svg
                   width="48"
@@ -86,16 +92,15 @@
                 </svg>
               </div>
               <p class="upload-text">
-                クリックまたはドラッグ&ドロップで<br />画像をアップロード
+                クリックまたはドラッグ＆ドロップで<br />複数の画像をアップロード
               </p>
-              <p class="upload-hint">JPG, PNG, HEIC対応 (最大10MB)</p>
+              <p class="upload-hint">
+                JPG, PNG, HEIC対応 (最奇20ファイル、各最大10MB)
+              </p>
             </div>
 
             <div id="preview-container" class="preview-container hidden">
-              <img id="preview-image" alt="プレビュー" />
-              <button type="button" id="remove-image" class="remove-btn">
-                ×
-              </button>
+              <!-- プレビューはJavaScriptで動的に生成 -->
             </div>
 
             <button type="submit" id="submit-btn" class="submit-btn" disabled>
@@ -120,24 +125,9 @@
         </div>
 
         <div id="result-card" class="card result-card hidden">
-          <h2>仕訳作成完了</h2>
+          <h2>処理完了</h2>
           <div class="result-content">
-            <div class="result-item">
-              <span class="result-label">摘要</span>
-              <span id="result-summary" class="result-value">-</span>
-            </div>
-            <div class="result-item">
-              <span class="result-label">金額</span>
-              <span id="result-amount" class="result-value">-</span>
-            </div>
-            <div class="result-item">
-              <span class="result-label">Deal ID</span>
-              <span id="result-deal-id" class="result-value">-</span>
-            </div>
-            <div class="result-item">
-              <span class="result-label">Receipt ID</span>
-              <span id="result-receipt-id" class="result-value">-</span>
-            </div>
+            <!-- 結果はJavaScriptで動的に生成 -->
           </div>
           <button
             type="button"
